@@ -3,4 +3,4 @@
 ### 用户前台：http://59.110.242.194:8080/fruit/frontshop/user.jsp  
 ### 管理后台：http://59.110.242.194:8080/fruit/backgroundshop/login.jsp
 ## 数据库结构设计
-### https://github.com/dubury/fruit/raw/分支名master/图片文件夹名称/***.png or***.jpg
+### https://github.com/dubury/fruit/raw/src/main/webapp/backgroundshop/image/1.png
