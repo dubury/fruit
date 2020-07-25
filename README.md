@@ -6,9 +6,9 @@
 - 数据库结构  
 ![image](http://github.com/dubury/fruit/raw/master//src/main/webapp/backgroundshop/image/1.png)  
 - admin表  
-![image](http://github.com/dubury/fruit/raw/master/src/main/webapp/backgroundshop/image/2.png)  
+![images](http://github.com/dubury/fruit/raw/master/src/main/webapp/backgroundshop/image/2.png)  
 - cart表  
-![image](http://github.com/dubury/fruit/raw/master/src/main/webapp/backgroundshop/image/3.png) 
+![images](http://github.com/dubury/fruit/raw/master/src/main/webapp/backgroundshop/image/3.png) 
 - commity表  
 ![image](http://github.com/dubury/fruit/raw/master/src/main/webapp/backgroundshop/image/4.png) 
 - sold表  
