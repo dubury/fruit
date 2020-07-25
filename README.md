@@ -22,4 +22,4 @@
    
    ![image](https://github.com/dubury/fruit/raw/master/src/main/webapp/backgroundshop/image/6.png) 
 ## 写在最后的话
--   代码很基础，很适合SSM新手上路。写的不好或者有bug的地方敬请见谅！也希望你们也可以和我一起改进这个项目
+-   代码很基础，很适合SSM新手上路。写的不好或者有bug的地方敬请见谅！也希望你们也可以和我一起改进这个项目。
