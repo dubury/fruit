@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--MyBatis的主配置文件-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--配置环境-->
+    <environments default="mysql">
+        <!--配置MySQL的环境-->
+        <environment id="mysql">
+            <!--配置事务类型-->
+            <transactionManager type="JDBC"/>
+            <!--配置数据源（连接池）-->
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3308/fruitshop?useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=UTC"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--指定映射文件的位置，映射配置文件指的是每个dao独立的配置文件-->
+
+    <mappers>
+        <mapper resource="com/admin/dao/IAdminDao.xml"/>
+        <mapper resource="com/admin/dao/ICommodityDao.xml"/>
+        <mapper resource="com/admin/dao/ISoldDao.xml"/>
+        <mapper resource="com/user/dao/IBuyDao.xml"/>
+        <mapper resource="com/user/dao/IUserDao.xml"/>
+        <mapper resource="com/user/dao/ICartDao.xml"/>
+    </mappers>
+
+</configuration>

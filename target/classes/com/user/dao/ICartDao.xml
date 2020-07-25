@@ -1,0 +1,25 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.user.dao.ICartDao">
+
+    <select id="select" parameterType="com.user.domain.Cart" resultType="com.user.domain.Cart">
+        select * from cart where id = #{id} and username = #{username}
+    </select>
+
+    <select id="selectByName" parameterType="String" resultType="com.user.domain.Cart">
+        select * from cart where username = #{username}
+    </select>
+
+    <insert id="insert" parameterType="com.user.domain.Cart">
+        insert into cart (username,id,cart_num) values (#{username},#{id},#{cart_num})
+    </insert>
+
+    <update id="update" parameterType="com.user.domain.Cart">
+        update cart set cart_num = cart_num + #{cart_num} where id = #{id} and username = #{username}
+    </update>
+
+    <delete id="deleteById" parameterType="com.user.domain.Cart">
+        delete from cart where id = #{id} and username = #{username}
+    </delete>
+</mapper>

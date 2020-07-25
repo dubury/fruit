@@ -1,0 +1,29 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.user.dao.IBuyDao">
+
+    <resultMap id="rec_hot" type="com.user.domain.RecHotEntity">
+        <id column="fruit_id" property="id" />
+        <result column="fruit_name" property="name"/>
+        <result column="sell_price" property="price" />
+        <result column="main_pic" property="main_pic" jdbcType="BLOB"/>
+    </resultMap>
+
+    <!--配置查询所有-->
+    <select id="recommend" resultMap="rec_hot">
+        <!--resultType指的是封装到实体类中-->
+        select fruit_id,fruit_name,sell_price,main_pic from commodity where status = "上架" and kind = "推荐"
+    </select>
+
+    <select id="hot" resultMap="rec_hot">
+        <!--resultType指的是封装到实体类中-->
+        select fruit_id,fruit_name,sell_price,main_pic from commodity where status = "上架" and kind = "热卖"
+    </select>
+
+    <select id="all" resultMap="rec_hot">
+        <!--resultType指的是封装到实体类中-->
+        select fruit_id,fruit_name,sell_price,main_pic from commodity where status = "上架"
+    </select>
+
+</mapper>

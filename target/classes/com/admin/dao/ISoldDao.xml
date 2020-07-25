@@ -1,0 +1,17 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.admin.dao.ISoldDao">
+
+    <update id="addSold" parameterType="com.admin.domain.Sold">
+        update sold set sold_num = sold_num + #{sold_num} where id = #{id}
+    </update>
+
+    <insert id="saveSold" parameterType="int">
+        insert into sold (id) values (#{id})
+    </insert>
+
+    <select id="sold_all" resultType="com.admin.domain.Sold">
+        select * from sold
+    </select>
+</mapper>
