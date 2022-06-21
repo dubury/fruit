@@ -20,7 +20,7 @@
     <!-- 版本锁定 -->
     <spring.version>5.2.8.RELEASE</spring.version>
     <mybatis.version>3.5.5</mybatis.version>
-    <mysql.version>8.0.20</mysql.version>
+    <mysql.version>8.0.28</mysql.version>
   </properties>
 
   <dependencies>
